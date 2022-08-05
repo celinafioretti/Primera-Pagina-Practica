@@ -12,6 +12,11 @@ body {
     margin: 0 auto;
 }
 
+.seccion {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
 
 /* Header */
 .site-header.inicio {
@@ -55,8 +60,8 @@ body {
 .navegacion a:hover {
     color: #ffc404;
 }
-/*selecciona el "last" o ultimo elemento en este caso de los enlaces*/
-.navegacion a:last-of-type{
+
+.navegacion a:last-of-type{ /*selecciona el "last" o ultimo elemento en este caso de los enlaces*/
     margin: 0;
 }
 .contenido-header h1 {
@@ -65,4 +70,9 @@ body {
     max-width: 35rem;
     line-height: 1; /** Interlineado **/
     font-size: 4rem;    
+}
+
+/** Iconos Nosotros **/
+.iconos-nosotros {
+    display: flex;
 }
