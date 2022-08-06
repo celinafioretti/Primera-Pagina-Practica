@@ -1,5 +1,9 @@
 html {
     font-size: 62.5%; /** Reset para REMS - 62.5% = 10px de 16px , se cambian los tamaños para redondear en los REMS**/
+    box-sizing: border-box;
+}
+*, *:before, *after {
+    box-sizing: inherit;
 }
 body {
     font-family: 'Lato', sans-serif;
@@ -27,6 +31,9 @@ img {
 .centrar-texto {
     text-align: center;
 }
+.d-block{
+    display: block!important;
+}
 /** Botones **/
 .boton {
     color: #ffffff;
@@ -36,12 +43,16 @@ img {
     padding: 1rem 3rem;
     text-transform: uppercase;
     display: inline-block; /** Los enlaces tienen un display "inline" por lo que si editamos sus dimensiones no funciona, pero si lo cambiamos a block o inline block si **/
+    text-align: center;
+    
 }
-.boton-amarillo {
+.boton-anuncios {
     background-color:  #995137;
+
 }
-.boton-verde {
+.boton-lista-anuncios {
     background-color: #d38901;
+    margin-top: 3rem;
 }
 
 /* Header */
@@ -137,5 +148,29 @@ img {
 .precio {
     color: #d38901;
     font-weight: 700;
+    padding: 1rem;
+    text-align: center;
+    font-size: 1.7rem;
+}
+.ver-catalogo {
+    display: flex;
+    justify-content: center;
+}
+/** Contacto Home **/
+.imagen-contacto {
+    background-image: url(../img/fondus-nublado.png);
+    height: 40rem;
+    background-position: center bottom;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    
+}
+.contenido-contacto {
+    flex: 1; /** Factor de crecimiento, detecta cuanto tamaño hay disponible y divide el tamaño en 1 y le asigna ese valor al elemento **/
+    color: #ffffff;
+}
+.contenido-contacto p {
+    font-size: 1.8rem;
 }
 
