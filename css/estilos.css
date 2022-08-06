@@ -12,6 +12,9 @@ body {
     max-width: 120rem; /** = 1200px **/
     margin: 0 auto;
 }
+img {
+  max-width: 100%;  
+}
 
 /** Utilidades **/
 .seccion {
@@ -85,13 +88,35 @@ body {
     display: flex;
     justify-content: space-between;
 } 
-.iconos {
+.icono {
     flex-basis: calc(33.3% - 1rem);
     text-align: center;
 }
-.iconos h3 {
+.icono h3 {
     text-transform: uppercase;
 }
-.iconos img {
+.icono img {
     width: 7rem;
 }
+/** Anuncios **/
+.contenedor-anuncios{
+    display: flex;
+    justify-content: space-between;
+}
+.anuncio {
+    flex-basis: calc(33.3% - 1rem);
+    border-style: solid;
+    border-color: #B5B5B5;
+    border-width: 1px;
+    /** border: width style color; ---> Tambien se puede colocar en esta posicion los valores de arriba**/
+    background: #F5F5F5;
+}
+.contenido-anuncio {
+    padding: 2rem;
+
+}
+.contenido-anuncio h3, .contenido-anuncio p {
+    margin: 0;
+}
+
+
