@@ -125,7 +125,7 @@ img {
     border-color: #B5B5B5;
     border-width: 1px;
     /** border: width style color; ---> Tambien se puede colocar en esta posicion los valores de arriba**/
-    background: #F5F5F5;
+    background: #dfd6ce;
 }
 .contenido-anuncio {
     padding: 2rem;
