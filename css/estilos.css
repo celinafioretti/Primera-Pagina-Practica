@@ -27,6 +27,22 @@ img {
 .centrar-texto {
     text-align: center;
 }
+/** Botones **/
+.boton {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.8rem;
+    padding: 1rem 3rem;
+    text-transform: uppercase;
+    display: inline-block; /** Los enlaces tienen un display "inline" por lo que si editamos sus dimensiones no funciona, pero si lo cambiamos a block o inline block si **/
+}
+.boton-amarillo {
+    background-color:  #995137;
+}
+.boton-verde {
+    background-color: #d38901;
+}
 
 /* Header */
 .site-header.inicio {
@@ -118,5 +134,8 @@ img {
 .contenido-anuncio h3, .contenido-anuncio p {
     margin: 0;
 }
-
+.precio {
+    color: #d38901;
+    font-weight: 700;
+}
 
