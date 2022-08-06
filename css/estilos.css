@@ -148,14 +148,16 @@ img {
 .precio {
     color: #d38901;
     font-weight: 700;
-    padding: 1rem;
+    padding: 2rem;
     text-align: center;
     font-size: 1.7rem;
+
 }
 .ver-catalogo {
     display: flex;
     justify-content: center;
 }
+
 /** Contacto Home **/
 .imagen-contacto {
     background-image: url(../img/fondus-nublado.png);
@@ -172,5 +174,19 @@ img {
 }
 .contenido-contacto p {
     font-size: 1.8rem;
+}
+/** Seccion Inferior **/
+.seccion-inferior {
+    display: flex;
+    justify-content: space-between;
+}
+.seccion-inferior .blog{
+    flex-basis: 60%;
+}
+.seccion-inferior .testimoniales {
+    flex-basis: calc(40% - 2rem);
+}
+.entrada-blog {
+    display: flex;
 }
 
