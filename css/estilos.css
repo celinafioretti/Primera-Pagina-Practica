@@ -34,6 +34,9 @@ img {
 .d-block{
     display: block!important;
 }
+.fs-3rem{
+    font-size: 3rem;
+}
 /** Botones **/
 .boton {
     color: #ffffff;
@@ -53,6 +56,10 @@ img {
 .boton-lista-anuncios {
     background-color: #d38901;
     margin-top: 3rem;
+}
+.negritas-color {
+    font-weight: 600;
+    color: #d38901;
 }
 
 /* Header */
@@ -179,14 +186,83 @@ img {
 .seccion-inferior {
     display: flex;
     justify-content: space-between;
+
 }
-.seccion-inferior .blog{
+.blog {
     flex-basis: 60%;
 }
-.seccion-inferior .testimoniales {
+.testimoniales {
     flex-basis: calc(40% - 2rem);
 }
 .entrada-blog {
     display: flex;
+    justify-content: space-between;
+    text-align: left;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+.entrada-blog:last-of-type{
+    margin-bottom: 0;
+}
+.imagen img {
+    max-width: 40rem;
+}
+.texto-entrada {
+    padding: 0 0 2rem 1rem;
+}
+.texto-entrada h4 {
+    margin: 0;
+    line-height: 1.5;
+    font-size: 2.5rem;
+}
+.texto-entrada h4::after {
+    content: "";
+    display: block;
+    width: 12rem;
+    height: 0.5rem;
+    background-color: #d38901;
+    margin-top: 1rem;
+} /** Los psudoelementos, no son seleccionables en las paginas. En este caso se lo manipula simplemente para crear una linea **/
+.texto-entrada a {
+    text-decoration: none;
+    color: black;
+}
+.texto-entrada a:hover {
+    color: #d38901;  
+}
+/** Testimoniales **/
+.testimonial {
+    background-color: #b87b0b;
+    font-size: 2.1rem;
+    color: #ffffff;
+    font-weight: 500;
+    padding: 2rem;
+    border-radius: 5%;
+}
+.testimonial p {
+    font-weight: 600;
+    font-style: oblique;
+    text-align: right;
+}
+.testimonial blockquote::before{
+    content: "";
+    background-image: url(/img/comilla.svg);
+    width: 4rem;
+    height: 4rem;
+    position: absolute;
+    left: -2rem;
+}
+.testimonial blockquote{
+    position: relative;
+    padding-left: 4rem;
+    font-weight: 300;
+}
+/** Footer **/
+.site-footer {
+    background-color: #4b4b4b;
+    margin-bottom: 0;
+}
+.contenedor-footer p{
+    margin-bottom: 0;
 }
 
