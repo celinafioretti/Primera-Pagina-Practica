@@ -139,8 +139,10 @@ img {
 .contenedor-anuncios{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .anuncio {
+    flex-shrink: 0;
     flex-basis: calc(33.3% - 1rem);
     border-style: solid;
     border-color: #B5B5B5;
@@ -275,7 +277,9 @@ img {
     display: flex;
     justify-content: space-between;
 }
-/** Nosotros **/
+/** INTERNAS **/
+
+/** Nosotros Interna **/
 .contenido-nosotros {
     display: flex;
 }
@@ -295,4 +299,7 @@ img {
     background-color: #d38901;
     margin-top: 1rem;
 }
+/** Anuncios Interna **/
+.anuncio-mercedes img {
 
+}
