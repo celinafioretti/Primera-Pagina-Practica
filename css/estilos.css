@@ -140,8 +140,10 @@ img {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+
 }
 .anuncio {
+ 
     flex-shrink: 0;
     flex-basis: calc(33.3% - 1rem);
     border-style: solid;
@@ -149,6 +151,7 @@ img {
     border-width: 1px;
     /** border: width style color; ---> Tambien se puede colocar en esta posicion los valores de arriba**/
     background: #dfd6ce;
+    margin-bottom: 2rem;
 }
 .contenido-anuncio {
     padding: 2rem;
@@ -299,7 +302,14 @@ img {
     background-color: #d38901;
     margin-top: 1rem;
 }
-/** Anuncios Interna **/
-.anuncio-mercedes img {
-
+/** Anuncio-Autos **/
+.precio-anuncio  {
+    font-size: 3rem;
+    margin-bottom: 0;
+}
+.descripcion-auto {
+    border-radius: 1.4%;
+    background-color: #e7e6e6;
+    margin-bottom: 2rem;
+    padding: 3rem;
 }
