@@ -286,6 +286,12 @@ img {
 .contenido-nosotros {
     display: flex;
 }
+.contenido-nosotros p {
+    margin-left: 3rem;
+}
+.contenido-nosotros img {
+    margin-left: 5rem;
+}
 .texto-nosotros {
     padding-left: 3rem;
 }
@@ -313,3 +319,7 @@ img {
     margin-bottom: 2rem;
     padding: 3rem;
 }
+.principal-anuncio img { 
+    width: 100%;
+}
+
