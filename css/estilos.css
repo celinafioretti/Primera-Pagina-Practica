@@ -13,7 +13,8 @@ body {
 
 /** Globales **/
 .contenedor {
-    max-width: 120rem; /** = 1200px **/
+    width: 95%;
+    max-width: 120rem; /** = 1200px; **/
     margin: 0 auto;
 }
 img {
@@ -39,6 +40,9 @@ img {
 }
 .fondo-gris {
     background-color: #4b4b4b;
+}
+.contenido-centrado {
+    max-width: 800px;
 }
 /** Botones **/
 .boton {
@@ -323,3 +327,7 @@ img {
     width: 100%;
 }
 
+/** Contacto **/
+label {
+    display: block;
+}
