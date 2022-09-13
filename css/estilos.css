@@ -55,6 +55,13 @@ img {
     display: inline-block; /** Los enlaces tienen un display "inline" por lo que si editamos sus dimensiones no funciona, pero si lo cambiamos a block o inline block si **/
     text-align: center;
     border: none;
+    flex: 0 0 100%;
+}
+@media (min-width: 768px) {
+    .boton {
+        display: inline-block;
+        flex: 0 0 auto;
+    }
 }
 .boton:hover {
     cursor: pointer;
@@ -202,7 +209,6 @@ img {
 .seccion-inferior {
     display: flex;
     justify-content: space-between;
-
 }
 .blog {
     flex-basis: 60%;
@@ -215,13 +221,9 @@ img {
     justify-content: space-between;
     text-align: left;
     align-items: center;
-    margin-bottom: 2rem;
 }
 .entrada-blog:last-of-type{
     margin-bottom: 0;
-}
-.imagen-blog img {
-    max-width: 40rem;
 }
 .texto-entrada {
     padding: 0 0 2rem 1rem;
@@ -288,6 +290,8 @@ img {
     display: flex;
     justify-content: space-between;
 }
+
+
 /** INTERNAS **/
 
 /** Nosotros Interna **/
@@ -316,6 +320,7 @@ img {
     background-color: #d38901;
     margin-top: 1rem;
 }
+
 /** Anuncio-Autos **/
 .precio-anuncio  {
     font-size: 3rem;
