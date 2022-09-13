@@ -54,11 +54,16 @@ img {
     text-transform: uppercase;
     display: inline-block; /** Los enlaces tienen un display "inline" por lo que si editamos sus dimensiones no funciona, pero si lo cambiamos a block o inline block si **/
     text-align: center;
-    
+    border: none;
+}
+.boton:hover {
+    cursor: pointer;
 }
 .boton-anuncios {
     background-color:  #995137;
-
+}
+.boton-contacto {
+    background-color: #77A3CE;
 }
 .boton-lista-anuncios {
     background-color: #d38901;
@@ -144,7 +149,6 @@ img {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-
 }
 .anuncio {
  
@@ -329,5 +333,58 @@ img {
 
 /** Contacto **/
 label {
+    font-weight: 800;
+    text-transform: uppercase;
     display: block;
+}
+.contactoDiv {
+    border: 3px solid #6f6f6f;
+    border-radius: 1%;
+    padding: 2rem 4rem 2rem 2rem;
+}
+.contactoDiv h2{
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: #333333;
+}
+input:not([type="submit"]), /*! <--- Esto, selecciona todos los inputs excepto el submit */
+textarea,
+select { 
+    display: block;
+    padding: 1rem;
+    width: 100%;
+    background-color: #e1e1e1;
+    margin-bottom: 2rem;
+    border: none;
+    border-radius: 1rem;
+}
+input[type="radio"]{
+    width: auto;
+    margin: 0;
+}
+select {
+    -webkit-appearance: none;
+    appearance: none;
+}
+input[placeholder="Tu correo electronico"], input[placeholder="Tu numero telefonico"], input[placeholder="Tu nombre"] { 
+    padding-left: 10px; 
+}
+.formularios div {
+    margin-bottom: 1rem;
+}
+.formularios p {
+    font-size: 1.5rem;
+    color: #4b4b4b;
+    margin: 2rem 0 0 0;
+}
+.forma-contacto {
+    max-width:30rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+textarea {
+    height: 20rem;
 }
